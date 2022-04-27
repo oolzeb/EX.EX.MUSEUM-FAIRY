@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>EX.EX.MUSEUM - Fairy</title>
+	<style type="text/css">
+    nav{background: white; height: 110px;}
+    nav ol,li{margin: auto; padding: 0; width: 1000px; height: 110px;}
+    nav li{list-style-type: none; width: 20%;float: left ; height: 110px;text-align: center; line-height: 100px;}
+		a{display: block; background: white; width: 150px; height: 50px; margin: 20px; text-align: center; line-height: 50px;font-family: 'Roboto Mono', monospace; text-decoration: none; border-radius: 8px;  font-weight: 200; color: black; font-size: 1em; }
+    footer{display: block; background: white; width: 150px; height: 50px; margin: 20px; text-align: center; line-height: 50px;font-family: 'Roboto Mono', monospace; text-decoration: none; border-radius: 8px;  font-weight: 200; color: black; font-size: 1em; }
+
+		span.a {
+  display: inline-block; /* the default for span */
+  width: 150px;
+  height: 40px;
+  padding: 5px;
+  border-radius: 13px;
+  line-height: 40px; 
+  background-color: white; 
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 700;
+  font-size: 1.2em;
+  margin: 15px;
+}
+
+		#abs1{position: absolute; width: 410px; right: 120px;}
+		#abs2{position: absolute; width: 410px; left: 75px; padding-top: 170px;}
+		#abs3{position: absolute; width: 600px; right: 125px; padding-top: 100px;}
+    #abs4{position: absolute; width: 450px; left: 90px; padding-top: 250px;}
+    #abs5{position: absolute; width: 590px; right: 70px; padding-top: 100px;}
+     #abs6{position: absolute; width: 600px; left: 20px; padding-top: 170px;}
+	  @font-face {
+    font-family: 'Hahmlet-Black';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/Hahmlet-Black.woff2') format('woff2');}
+    * {
+    	 font-family: 'Hahmlet-Black';
+    }
+    @font-face {
+    font-family:'Noto Sans KR', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap') }
+
+   @font-face {
+    font-family: font-family: 'Roboto Mono', monospace;
+    src: url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200&display=swap') }
+
+   
+
+		img{display: block; width: 100%; }
+		body, h1, h2,h3,h4,h5,h6, img,section {margin: 0;}
+		header, section, footer {width: 800px; margin: auto; text-align: center;padding-top: 30px; padding-bottom: 30px; }
+		header{height: 200px; background: white;}
+		h1{width: 650px; word-break: keep-all;  text-align: center; padding-top: 10px;}
+    .finalfinal{width: 650px; font-size: 2em; line-height: 55px; padding-left: 80px ; padding-top: 100px;}
+		h2{width: 650px; word-break: keep-all;  text-align: center; padding-top: 30px; font-size: 2.1em; text-decoration-line: underline;}
+		h3{width: 700px; word-break: keep-all; height: 20px; text-align: center; padding-top: 40px; font-size: 2.3em; margin: auto;}
+		h4{width: 700px; word-break: keep-all;  text-align: left; font-size: 8em; padding-left: 100px; position: relative; padding-top: 60px; line-height: 1.2em;}
+		  .bear {font-size: 3.5em;}
+		  .fox{font-size: 4em;}
+		h5{width: 700px; word-break: keep-all; text-align: left; padding-left: 105px; padding-top: 50px; font-size: 1.8em; font-family:'Noto Sans KR', sans-serif;  }
+		   .final2{color: white; text-align: center; padding-left: 370px;
+		   	padding-top: 50px; line-height: 50px; width: 700px; font-size: 1.5em;}
+		   .final0{color: white; text-align: center; padding-left: 370px;
+		   	padding-top: 20px; line-height: 50px; width: 700px;}
+		h6{width: 700px; word-break: keep-all; height: 20px; text-align: left; padding-left: 105px;  font-size: 1.2em; font-family:'Noto Sans KR ', sans-serif; font-weight: 500; line-height: 1.8em; position: relative; padding-top: 40px;}
+		.bear1{width: 670px;}
+		.tiger{font-size: 0.7em; padding-top: 100px;}
+
+		p{width: 900px; word-break: keep-all;  text-align: right; font-size: 6.8em; padding-left: 370px; position: relative; padding-top: 180px; line-height: 1.2em; margin: 15px;}
+		  .wolf {font-size: 4em; padding-top: 230px;}
+		  .name{font-family: 'Noto Sans KR', sans-serif; font-size: 1.8em;
+		       width: 700px; word-break: keep-all; text-align: right; font-weight: 700; padding-top: 20px; margin: 0px; padding-left: 590px; }
+		   .explain {width: 700px; word-break: keep-all; text-align: right; padding-left: 590px;  font-size: 1.2em; font-family:'Noto Sans KR ', sans-serif; font-weight: 500; line-height: 1.8em; position: relative; padding-top: 40px; margin: 0px; padding-bottom: 100px;}
+		.hero-image {
+  background: url(2page.jpg) no-repeat center; 
+  background-size: cover;
+  height: 500px;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+}
+.final{background-color: black; width: 100%; display: block; margin-top: 100px; padding-top: 100px; padding-bottom: 100px;}
+
+	</style>
+</head>
+<body>
+<nav>
+  <ol id="a">
+    <li>
+      <a href="#a">EX.EX.MUSEUM</a>
+    </li>
+    <li>
+      <a href="#b" >EX.</a>
+    </li>
+    <li>
+    <a href="#c" >EX.</a>
+    </li>
+    <li>
+     <a href="#d">Fairy</a>
+     </li>
+    <li><a href="#e">Final</a></li>
+  </ol>
+</nav>
+	<img src="exmuseum.png" >
+	<img src="fa.jpg" id="b">
+	
+  <section id="c">
+  	<div class="hero-image">
+    <div class="hero-text">
+    <h1 > 동화들은 우리의 어린 시절 한 부분을 다채롭게 채워주었습니다.</h1>
+    <h2>그중에서도 동화 속에서 등장하는 동물들은 </h2>
+  </div>
+</section>
+  
+  <section>
+  	<img src="3page.jpg">
+  </section>
+
+<section>
+	<h3>그 역할을 아주 톡톡히 해내왔죠. </h3>
+</section>
+
+<section>
+	<h3>하지만 </h3>
+</section>
+
+ <section>
+ 	<div class="hero-image">
+ 	<div class="hero-text">
+    <h2 >현재 인류의 이기심으로 비롯된 생태계 파괴와 오염, 불법 밀렵 등으로 해마다 많은 종의 생물이 한반도에서 사라지고 있습니다.</h2>
+  </section>
+
+  <img src="4page.jpg">
+	<img src="1page.jpg" id="d">
+
+  <img src="tiger.jpg" id="abs1">
+  <h4>
+  		떡 하나 주면 안잡아먹지 
+  </h4>
+  <h5> 
+  	호랑이 ・ 멸종위기야생동물 1급 
+  </h5>
+
+   <h6> 
+  	과거 한반도에 널리 서식하였지만 조선시대 말기에 총이 들여오면서부터 사냥이 시작되어 개체수가 감소하였다. 또한, 일제강점기 해수구제사업*으로 많은 호랑이가 사냥되며 개체수가 급감하여 현재는 절멸된 것으로 여겨진다. 
+  </h6>
+
+  <h6 class="tiger">
+  	* 일제강점기 시기 조선총독부가 "사람과 재산에 위해를 끼치는 해수(害獸)를 구제한다."라는 명분을 내세워 한반도 내 야생동물에 대한 체계적인 
+    보전정책 없이 야생동물들의 퇴치와 포획을 주도 및 장려한 것을 이르는 표현 
+  </h6>
+
+
+
+ <img src="deer.jpg" id="abs2">
+  <p>
+  		나무꾼님 사냥꾼이 자꾸 쫓아와요 
+  </p>
+  <p class="name">
+  	대륙사슴 ・ 멸종위기야생동물 1급 
+  </p>
+   <p class="explain">
+  	동북아시아 전체에 널리 분포하고 있었으나, 밀렵과 서식처 파괴로 개체군이 빠르게 감소하고 있다. 조선시대부터 약재로 쓰이는 녹용과 녹각, 사슴피를 얻기 위한 사냥이 주요 위협요인으로 작용해왔으나, 대륙사슴 야생개체의 절멸은 1940년대 일제강점기의 해수구제 사업 이후 이다.
+    현재 남한에 서식하던 야생 대륙 사슴은 멸종된 상태이다.
+
+  </p>
+
+   <img src="bear.png" id="abs3">
+  <h4 class="bear">
+  		100일 동안 쑥과 마늘만을  먹고 
+      버텨 사람이 되었고 그 이름을  웅녀로 칭한다 
+  </h4>
+  <h5> 
+  	반달가슴곰 ・ 멸종위기야생동물 1급 
+  </h5>
+
+   <h6 class="bear1"> 
+  	과거 한반도 전역에 분포할 정도로 많은 개체가 서식하였으나,웅담을 노린 밀렵과 일제강점기 해수구제 사업 등으로 1,000마리 넘는 반달가슴곰이 포획되며 개체수가 급격히 줄어들었다. 이후로도 서식처 단절과 불법거래 등으로 거의 멸종직전까지 개체수가 급감하였다. 하지만 
+    2000년대 이후 활발히 진행된 복원사업으로 현재 지리산과 수도산 등에서 야생개체군이 서식하고 있다.
+  </h6>
+
+   <img src="wolf.jpg" id="abs4">
+  <p class="wolf">
+  		그런데 할머니, 입에는 왜이렇게 뾰족뾰족한 이가 나있어요? 
+  </p>
+  <p class="name">
+  	늑대 ・ 멸종위기야생동물 1급 
+  </p>
+   <p class="explain">
+  	사람들과 농가에 피해를 준다는 이유로 이루어진 대대적인 포획과 사냥(game species), 먹이 생물종의 감소로 분포가 빠르게 감소하였다. 이후 1997년 서울대공원의 마지막 늑대가 폐사하며 
+    더 이상 남한에서의 야생 늑대 서식은 발견되지 않고 있다. </p>
+
+    <img src="fox1.png" id="abs5">
+  <h4 class="fox">
+  		넌 내 입이 짧은 줄 알면서 왜 긴병에다 음식을 담아놓았니?
+  </h4>
+  <h5> 
+  	여우 ・ 멸종위기야생동물 1급 
+  </h5>
+
+   <h6 class="bear1"> 
+  과거에는 한반도에서 제주도와 울릉도를 제외한 전역에 분포하였으나 서식지 파괴 및 쥐잡기 운동에 따른 
+  2차 피해로 인해 야생개체가 멸종된 것으로 추측된다. 2012년부터 현재까지 소백산국립공원을 중심으로 
+  복원 사업을 진행하여 야생에서 서식 중이다
+  </h6>
+
+
+    <img src="durumi.jpg" id="abs6">
+  <p class="wolf">
+  		그럼 넌 내 부리가 긴 줄 알면서 왜 접시에 음식을 담아 놓았니?
+  </p>
+  <p class="name">
+  	두루미 ・ 멸종위기야생생물 1급 
+  </p>
+   <p class="explain">
+  	두루미의 번식지의 경우 개발 등의 압력으로 서식지가 점차 감소하고 있다. 월동지의 경우 민간인통제지역의 면적 변화, 댐건설로 인한 잠자리 소실, 갯벌 매립, 해안 지역의 개발, 
+    농경지의 감소 등이 두루미의 서식을 위협하고 있다. </p>
+
+
+
+  	<div class="final">
+  		<section id="e">
+  		<span class="a">서식지파괴</span> <span class="a">포획과 사냥</span>
+  		<span class="a">밀렵</span>
+  		<span class="a">먹이생물종감소</span> <span class="a">녹용</span>
+  		<span class="a">웅담</span> <span class="a">불법거래</span>
+  		<span class="a">갯벌매립</span> <span class="a">농경지감소</span>
+  		<span class="a">댐건설</span><span class="a">해안지역개발</span>
+      </section>
+  
+      <h5 class="final0">.</h5>
+     
+
+
+   
+      	 <h5 class="final2">만약 신이 존재한다면 결코 구원받지 못할 생물이 있다. 바로 인간이다.인간은 자신의 욕심과 이기를 위해서라면 어떤 생물이든 가리지 않고 무자비하게 씨를 말려왔다. </h5>
+
+</div>
+  
+
+     <section>
+      <h1 class="finalfinal">
+     동화 속 동물들을 포함하여 현재 우리와 함께 살아 숨쉬는 자연의 존재들이 인간의 욕심으로 인해 역사속으로 영원히 사라지고 있습니다. 이러한 끝이 없는 생태계 파괴의 상황에서 
+      우리가 동물에게 요구하는 불필요한 욕심에 대해 한번쯤은 멈춰서서 생각해보는 시간이 필요하지 않을까요. </h1>
+    </section>
+   <img src="6.jpg">
+  
+      
+<footer>copyright.Hyun jin Kim @oolzeb </footer>
+
+
+</body>
+</html>
